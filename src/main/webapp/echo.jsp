@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ZHDM</title>
+    <title>SpringWebsocket</title>
     <style type="text/css">
         #connect-container {
             float: left;
@@ -60,7 +60,6 @@
                 */
             if(url.indexOf('sockjs') != -1) {
             	//ws = new SockJS(url, undefined, {protocols_whitelist: transports});
-            	
             	ws = new SockJS('http://127.0.0.1:8080/SpringWebsocket/sockjs/websocket');
             }
             else {
